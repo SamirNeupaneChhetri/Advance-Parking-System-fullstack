@@ -1,0 +1,62 @@
+/* LoginSignup.css */
+body {
+    margin: 0;
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    background-color: #300e0e; /* Optional background color */
+  }
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background-color: hsl(0, 0%, 100%);
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .input-field {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .input-field .icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #555;
+  }
+  
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: 1px solid #808080;
+    font-size: 1rem;
+  }
+  
+  button {
+    width: 100%;
+    padding: 0.8rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #0d3865;
+    color: #300e0e;
+    font-size: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  button .icon {
+    margin-right: 8px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
