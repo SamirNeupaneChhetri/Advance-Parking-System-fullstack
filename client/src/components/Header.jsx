@@ -8,9 +8,11 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center py-6 px-6">
         {/* Logo Section */}
         <div className="flex items-center">
+        <Link to="/">
           <span className="text-5xl font-extrabold text-white tracking-wide transition-transform transform hover:scale-110">
             LAB-Parking
           </span>
+          </Link>
         </div>
 
         {/* Navigation Links */}
