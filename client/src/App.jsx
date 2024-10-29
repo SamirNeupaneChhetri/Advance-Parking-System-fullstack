@@ -1,23 +1,28 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import LoginSignup from "./components/LoginSignup/LoginSignup";
-import Signup from "./components/LoginSignup/SignUp";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/Home.jsx"; 
+import About from "./pages/About.jsx";
+import Signup from "./pages/Signup.jsx";
+import Login from "./pages/Login.jsx";
+import Services from "./pages/Service.jsx";
+import Header from "./components/Header.jsx";
+import Contact from "./pages/Contact.jsx";
+import Footer from "./components/Footer.jsx";
 
-const App = () => {
+function App() {
   return (
-    <Router>
-      <div>
-        <Routes>
-          {/* Route for Login page */}
-          <Route path="/login" element={<LoginSignup/>} />
-          {/* Route for Signup page */}
-          <Route path="/signup" element={<Signup />} />
-          {/* Optionally, set a default route */}
-          <Route path="/" element={<LoginSignup />} /> {/* Redirect to Login if no path matches */}
-        </Routes>
-      </div>
-    </Router>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/signup" element={<Signup />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
