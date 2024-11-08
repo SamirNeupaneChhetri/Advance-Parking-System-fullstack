@@ -7,6 +7,7 @@ import Services from "./pages/Service.jsx";
 import Header from "./components/Header.jsx";
 import Contact from "./pages/Contact.jsx";
 import Footer from "./components/Footer.jsx";
+import ReserveSpot from "./pages/ReserveSpot.jsx";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="/services" element={<Services />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/reserve-spot" element={<ReserveSpot />} />
       </Routes>
       <Footer />
     </BrowserRouter>

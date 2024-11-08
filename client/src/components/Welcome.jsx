@@ -1,5 +1,6 @@
 import React from "react";
 import parkingImage from "../assets/lab.jpeg";
+import { Link } from "react-router-dom";
 
 const Welcome = () => {
   return (
@@ -20,9 +21,11 @@ const Welcome = () => {
           Your convenient solution for hassle-free parking. Reserve your spot
           today!
         </p>
+        <Link to="/reserve-spot">
         <button className="mt-8 bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-blue-700 transition duration-300">
           Reserve a Spot
         </button>
+        </Link>
       </div>
     </div>
   );
