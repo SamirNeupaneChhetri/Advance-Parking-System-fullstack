@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const CallToAction = () => {
   return (
@@ -7,9 +8,11 @@ const CallToAction = () => {
       <p className="mt-4 text-lg">
         Experience the best parking solution tailored just for you.
       </p>
+      <Link to="/Login">
       <button className="mt-8 bg-white text-blue-600 font-semibold px-8 py-3 rounded-lg shadow-lg hover:bg-gray-200 transition duration-300">
         Get Started
       </button>
+      </Link>
     </section>
   );
 };
