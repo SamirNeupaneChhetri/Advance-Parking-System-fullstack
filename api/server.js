@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 app.use(express.json()); // Middleware for parsing JSON requests
 app.use(cors()); // Middleware for enabling CORS
 
-// Routes
+// Routes add
 app.use('/api', authRoutes);
 
 // Global error handler (Optional, but good practice)
